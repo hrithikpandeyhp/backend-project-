@@ -3,10 +3,10 @@ import { v2 as cloudinary } from "cloudinary";
 import fs from "fs";
 
 cloudinary.config({
-    
-        cloud_name: "vynf7fy5",
-        api_key: "271672546955418",
-        api_secret: "**********",
+
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 console.log("Cloudinary environment check:", {
